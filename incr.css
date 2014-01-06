@@ -1,0 +1,115 @@
+body
+{
+	font-size: 10pt;
+}	
+	
+table
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr, td, th
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.center
+{
+	text-align: center;
+}
+
+input[type = text]
+{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid black;
+}
+
+input.right
+{
+	text-align: right;
+}
+
+.invisible
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+textarea
+{
+	border-radius: 10px;
+	padding-top: 5px; 
+	padding-bottom: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.centerTable, .mainTable, .centerAlign
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.formButtons
+{
+	margin-left: 300px;
+	
+}
+
+.supplierPrint
+{
+	display: none;
+}
+
+select:disabled
+{
+	color: black;
+	border: none;
+	overflow: auto;
+	background: white;
+}
+
+.red
+{
+	color: red;
+}
+
+.blue
+{
+	color: blue;
+}
+
+/*input.red, input.blue
+{
+	color: black;
+}*/
+/*input:focus, select:focus
+{
+  	color: blue;
+	border-bottom: solid 1px blue;
+	/*-moz-box-shadow: -5 -5 5 blue;
+	-webkit-box-shadow: -5 -5 5 blue;
+	box-shadow: -5 -5 blue;
+}*
+
+input[readonly]
+{
+	border: none;
+}
+
+/*textarea:focus
+{
+	color: blue;
+	border: solid 1px blue;
+}*/
+/*
+input:invalid
+{
+	color: red;
+	border-bottom: solid 1px red;
+	box-shadow: 5 5 red;
+}*/

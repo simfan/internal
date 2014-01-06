@@ -1,0 +1,115 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="incr_search.css">
+	<link rel="stylesheet" type="text/css" href="left_border.css">
+</head>
+<body>
+	<div class = "leftBorder"><div>Navigation</br></div><div class = "leftLinks"><a class = "left" href = "index.php">Index</a></div></div>
+	<div class = "mainTable">
+	<h2>Search INCR</h2>
+	<form name = "incrSearch" action = "internal_table.php" method = post >
+		<table>
+			<tr>
+				<td>Incr No</td><td><input type = "text" name = "incrNo" id = "incrNo" size = 6 maxlength = 6 /></td>
+			</tr>
+			<tr>
+				<td>Supplier</td><td><input type = "text" name = "supplier" id = "supplier" size = 50 maxlength = 50 /></td>
+			</tr>
+			<tr>
+				<td>Fargo Part Number</td><td><input type = "text" name = "fPartNo" id = "fPartNo" size = 20 maxlength = 20 /></td>
+			</tr>	
+			<tr>
+				<td>Rev</td><td><input type = "text" name = "rev" id = "rev" size = 5 maxlength = 5 /></td>
+			</tr>
+			<tr>
+				<td>Vendor Part Number</td><td><input type = "text" name = "vPartNo" id = "vPartNo" size = 20 maxlength = 20 /></td>
+			</tr>	
+			<tr>
+				<td>Order Date</td><td><input type = "text" name = "orderDate" id = "orderDate" size = 10 maxlength = 10 /></td>
+			</tr>
+			<tr>
+				<td>Description</td><td><input type = "text" name = "desc" id = "desc" size = 20 maxlength = 20 /></td>
+			</tr>
+			<tr>
+				<td>Serial Number</td><td><input type = "text" name = "serialNo" id = "serialNo" size = 20 maxlength = 20 /></td>
+			</tr>
+			<tr>
+				<td>Price Per Unit</td><td><input type = "text" name = "ppu" id = "ppu" size = 10 maxlength = 10 /></td>
+			</tr>
+			
+			<tr>
+				<td>Buyer</td><td><input type = "text" name = "buyer" id = "buyer" size = 20 maxlength = 20 /></td>
+			</tr>
+			<tr>
+				<td>Inspection Level</td><td><input type = "text" name = "level" id = "level" size = 10 maxlength = 10 /></td>
+			</tr>	
+			<tr>
+				<td>P.O. Number</td><td><input type = "text" name = "poNo" id = "poNo" size = 7 maxlength = 7 /></td>
+			</tr>
+			<tr>
+				<td>Qty Received</td><td><input type = "text" name = "qtyRec" id = "qtyRec" size = 5 maxlength = 5 /></td>
+			</tr>	
+			<tr>
+				<td>Qty Rejected</td><td><input type = "text" name = "qtyRejected" id = "qtyRejected" size = 5 maxlength = 5 /></td>
+			</tr>
+			<tr>
+				<td>Account Number</td><td><input type = "text" name = "account" id = "account" size = 10 maxlength = 10 /></td>
+			</tr>
+			<tr>
+				<td>Date</td><td><input type = "text" name = "date" id = "date" size = 10 maxlength = 10 /></td>
+			</tr>
+			</br>
+		
+			<tr>
+				<td colspan = 2>
+					<table>
+						<tr>
+							<td colspan = 4>Disposition</td>
+						</tr>
+						<tr>
+							<td><label>Engineering Change Order<input type = "checkbox" name = "eng" id = "eng" value = "Engineering" /></label></td><td><label>Supplier Corrective Action Request<input type = "checkbox" name = "scar" id = "scar" value = "supply" /></label></td><td><label>Other<input type = "checkbox" name = "other" id = "other" value = "other" /></label></td><td><label>None Required<input type = "checkbox" name = "none" id = "none" value = "none" /></label></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan = 2>Quantity</td>
+			</tr>
+			<tr>
+				<td>Repair</td><td><input type = "text" name = "repair" id = "repair" size = 5 maxlength = 5 /></td>
+			</tr>
+			<tr>
+				<td>Rework to Dwg</td><td><input type = "text" name = "rework" id = "rework" size = 5 maxlength = 5 /></td>
+			</tr>				 	
+			<tr>
+				<td>Use As Is</td><td><input type = "text" name = "use" id = "use" size = 5 maxlength = 5 /></td>
+			</tr>
+			<tr>
+				<td>Scrap</td><td><input type = "text" name = "scrap" id = "scrap" size = 5 maxlength = 5 /></td>
+			</tr>
+			<tr>
+				<td>Return to Vendor</td><td><input type = "text" name = "return" id = "return" size = 5 maxlength = 5 /></td>
+			</tr>
+			<tr>
+				<td>Replacement Required</td><td><input type = "text" name = "replace" id = "replace" size = 5 maxlength = 5 /></td>
+			</tr>
+			
+			<tr>
+				<td>Actionee</td><td><input type = "text" name = "actionee" id = "actionee" size = 25 maxlength = 25 /></td>
+			</tr>
+			<tr>
+				<td>Due Date</td><td><input type = "text" name = "dueDate" id = "dueDate" size = 10 maxlength = 10 /></td>
+			</tr>
+<!--				<tr>
+				<td>Supplier</td><td><input type = "text" name = "supplier" id = "supplier" size = 50 maxlength = 50 /></td>
+			</tr>
+			<tr>
+				<td>Fargo Part Number</td><td><input type = "text" name = "fPartNo" id = "fPartNo" size = 20 maxlength = 20 /></td>
+			</tr>-->
+		</table>
+		
+		<input type = "submit" name = "search" id = "search" value = "Search" />
+	</form>
+	</div>
+</body>
+</html>		

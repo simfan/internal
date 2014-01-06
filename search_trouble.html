@@ -1,0 +1,65 @@
+<?php
+	require "check_login.php";
+	$screen = 1;
+??
+<html>
+	<head>
+	</head>
+	<body>
+		<?php require "left_border.php";?>
+		<div class = "mainTable">
+		<form  name = "itrSearch" action = "internal_trouble_table.php" method = post >
+			<table>
+				<tr>
+					<td>ITR Number</td>
+					<td><input type = "text" name = "itrNo" id = "itrNo" size = 6 maxlength = 6 /></td>
+				</tr>
+				<tr>
+					<td>Inspection Date</td>
+					<td><input type = "text" name = "iDate" id = "iDate" size = 10 maxlegth = 10 /></td>
+				</tr>
+				<tr>
+					<td>Station</td>
+					<td><input type = "text" name = "station" id = "station" size = 20 maxlength = 20 /></td>
+				</tr>
+				<tr>
+					<td>Dept. Manager</td>
+					<td><input type = "text" name = "manager1" id = "manager1" size = 25 maxlength = 25 /></td>
+				</tr>
+				<tr>
+					<td>Inspector</td>
+					<td><input type = "text" name = "inspector" id = "inspector" size = 25 maxlength = 25 /></td>
+				</tr>
+				<tr>
+					<td>Part No.</td>
+					<td><input type = "text" name = "partNo" id = "partNo" size = 20 maxlength = 20 /></td>
+				</tr>
+				<tr>
+					<td>Operator</td>
+					<td><input type = "text" name = "operator" id = "operator" size = 25 maxlength = 25 /></td>
+				</tr>
+				<tr>
+					<td>Reviewed By</td>
+				</tr>
+				<tr>
+					<td>Department Manager</td>
+					<td><input type = "text" name = "manager2" id = "manager2" size = 25 maxlength = 25 /></td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td><input type = "text" name = "reviewDate1" id = "reviewDate2" size = 10 maxlength = 10 /></td>
+				</tr>
+				<tr>
+					<td>QA Department Head</td>
+					<td><input type = "text" name = "deptHead" id = "deptHead" size = 25 maxlength = 25 /></td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td><input type = "text" name = "reviewDate2" id = "reviewDate2" size = 10 maxlength = 10 /></td>
+				</tr>
+			</table>
+			<input type = "submit" name = "submit" id = "submit" value = "Search" />
+		</form>
+		</div>
+	</body>
+</html>	

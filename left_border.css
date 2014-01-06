@@ -1,0 +1,150 @@
+.header
+{
+	top: 0px;
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	background: black;
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+	display: inline;
+}
+ 	
+.headerLink
+{
+	left: 10px;
+	top: 10px;
+	position: absolute;
+}
+
+a.headerLink:link
+{
+	color: white;
+	text-decoration: none;
+}
+
+a.headerLink:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+a.headerLink:hover
+{
+	color: white;
+	text-decoration: underline;
+}
+
+.leftBorder
+{
+	top: 0px;
+	left: 0px;
+	height: 175%;
+	width: 160px;
+	position: fixed;
+	background: black;
+	/*background: white;*/
+	_background: white;
+	color: white;
+	*color: black;
+	_color: black;
+	font-size: 12pt;
+	font-family: arial;
+	font-weight: bold;
+	padding: 5px;
+	display: table;
+	z-index: 2;
+}
+.search, .new
+{
+	display: inline;
+	position: relative;
+	top: 5px;
+	left: 10px;
+	font-size: 10pt;
+	padding-bottom: 5px;
+}
+
+.leftLinks
+{
+	top: 50px;
+	position: fixed;
+	color: white;
+	*color: black;
+	_color: black;
+	display: table;
+}
+
+.left
+{
+	width: 150px;
+	position: absolute;
+}
+
+.cat
+{
+	width: 150px;
+}
+a.left:link
+{
+	color: white;
+	*color: black;
+	_color: black;
+	text-decoration: none;
+}
+
+a.left:visited
+{
+	color: white;
+	*color: black;
+	_color: black;
+	text-decoration: none;
+}
+
+a.left:hover, .cat:hover
+{
+	color: black;
+	*color: white;
+	_color: white;
+	background: white;
+	*background: black;
+	_background: black;
+	text-decoration: underline;
+}
+
+	
+.mainTable
+{
+	top: 0px;
+	left: 160px;
+	height: 100%;
+	position: absolute;
+	padding-left: 50px;
+	padding-top: 10px;
+	z-index: 1;
+}	
+
+@media print
+{
+	.leftBorder
+	{
+		display: none;
+	}
+	
+	.mainTable
+	{
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		position: absolute;
+		padding: 0px;
+	}
+}
+
+h1
+{
+	padding-top: 20px;
+
+}

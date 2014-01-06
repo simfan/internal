@@ -1,0 +1,60 @@
+table
+{
+	border-collapse: collapse;
+}
+
+th
+{
+	padding: 10px;
+}
+
+td
+{
+	padding: 5px;
+	border: solid black 1px;
+}
+
+.headingText, .headingLarge
+{
+	vertical-align: bottom;
+}
+
+@media screen
+{
+	table
+	{
+		table-layout: fixed;
+		width: 2000px;	
+	}
+	.largeText, .headingLarge
+	{
+		width: 200px;
+	}
+
+	.tableText, .headingText, .linkText
+	{
+		/*width: 110px;*/
+		width:150px;
+	}
+	/*span
+	{
+		display: inline-block;
+	}*/
+}
+@media print
+{
+	.tableText, .largeText
+	{
+		font-size: 8pt;
+	}
+	
+	.headingText, .headingLarge
+	{
+		font-size: 6pt;
+	}
+	
+	.linkText
+	{
+		display: none;
+	}
+}

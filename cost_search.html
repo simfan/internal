@@ -1,0 +1,29 @@
+<html>
+<body>
+	<h2>Cost Search</h2>
+	<form name = "costSearch" action = "trouble_cost_table.php" method = "POST" >
+		<table>
+			<tr>
+				<td>Sort By</td>
+			</tr>
+			<tr>
+				<td><input type = "radio" name = "primarySearch" id = "primarySearch" value = "partNumber" checked = checked/></td>
+				<td>Part Number:</td>
+				<td><input type = "text" name = "partNum" id = "partNum" /></td>
+			</tr>
+			<tr>
+				<td><input type = "radio" name = "primarySearch" id = "primarySearch" value = "materialPart" /></td>
+				<td>Material Part:</td>
+				<td><input type = "text" name = "materialPart" id = "materialPart" /></td>
+			</tr>
+			<tr>
+				<td><input type = "radio" name = "primarySearch" id = "primarySearch" value = "generalSort" /></td>
+				<td>General Sort </br>(ICN Number)</td>
+			</tr>
+			<tr>
+				<td colspan = 3><input type = "submit" name = "submit" id = "submit" value = "Submit" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body
+{
+	font-size: 8pt;
+}	
+	
+table
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr, td, th
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.center
+{
+	text-align: center;
+}
+select
+{
+	border: none;
+}		
+
+input[type = text] 
+{
+	border: none;
+}
+		
+input.right
+{
+	text-align: right;
+}
+
+.centerTable
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.invisible, .leftBorder
+{
+	display:none;
+}
+
+.supplierScreen
+{
+	display: none;
+	*display: none;
+	_display: none;
+}
+ 
+.supplierPrint
+{
+	display: inline;
+	*display: inline;
+	_display: inline;
+}
+
+.red, .blue
+{
+	color: black;
+}
+/*.mainTable
+{
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	position: absolute;
+	padding-left: 0px;
+}*/
